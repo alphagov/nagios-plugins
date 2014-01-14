@@ -35,6 +35,8 @@ setup(
 
     entry_points={
         'console_scripts': [
+            'check_apt_security_updates='
+            'plugins.command.check_apt_security_updates:main',
             'check_reboot_required=plugins.command.check_reboot_required:main'
         ]
     }

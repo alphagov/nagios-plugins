@@ -8,7 +8,8 @@ import os
 import re
 import sys
 
-from plugins.output import (nagios_ok,
+from plugins.output import (CheckException,
+                            nagios_ok,
                             nagios_warning,
                             nagios_critical,
                             nagios_unknown,

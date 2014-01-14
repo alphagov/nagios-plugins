@@ -8,9 +8,18 @@ Installation
 
     $ pip install gds-nagios-plugins
 
-Requires update-notifier-common for ``check_reboot_required``
+Requires update-notifier-common for ``check_reboot_required`` and ``check_apt_security_updates``
 
     $ apt-get install update-notifier-common
+
+check_apt_security_updates
+--------------------------
+
+Checks the number of outstanding security updates.
+
+    check_apt_security_updates [critical_number] [warning_number]
+
+    Default threshold is 0 days
 
 check_reboot_required
 ---------------------
