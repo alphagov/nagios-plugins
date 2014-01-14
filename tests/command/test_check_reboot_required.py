@@ -3,8 +3,8 @@ import os
 
 from freezegun import freeze_time
 
-from plugins.command.check_reboot_required import (CheckException,
-                                                   dpkg_log_lines,
+from plugins.output import CheckException
+from plugins.command.check_reboot_required import (dpkg_log_lines,
                                                    grep,
                                                    parse_files)
 

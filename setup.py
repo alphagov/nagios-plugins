@@ -5,7 +5,7 @@ from plugins import __version__
 
 repo_directory = os.path.dirname(__file__)
 try:
-    long_description = open(os.path.join(repo_directory, 'README.md')).read()
+    long_description = open(os.path.join(repo_directory, 'README.rst')).read()
 except:
     long_description = None
 
@@ -35,6 +35,8 @@ setup(
 
     entry_points={
         'console_scripts': [
+            'check_apt_security_updates='
+            'plugins.command.check_apt_security_updates:main',
             'check_reboot_required=plugins.command.check_reboot_required:main'
         ]
     }
