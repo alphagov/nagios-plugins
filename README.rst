@@ -3,6 +3,9 @@ nagios-plugins
 
 A collection of useful nagios plugins used in GDS infrastructure.
 
+.. image:: https://travis-ci.org/alphagov/nagios-plugins.png?branch=master
+   :target: https://travis-ci.org/alphagov/nagios-plugins
+
 Installation
 ------------
 
