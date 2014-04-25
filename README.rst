@@ -33,3 +33,11 @@ Checks whether there are any packages that are waiting for a reboot until their 
 
     Default threshold is 0 days
 
+
+check_elasticsearch
+-------------------
+
+Checks the health of elasticsearch clusters.
+
+    check_elasticsearch [options]
+
