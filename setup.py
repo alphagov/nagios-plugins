@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import os
 from setuptools import setup, find_packages
 
@@ -25,7 +27,9 @@ setup(
     keywords='',
 
     setup_requires=['setuptools-pep8'],
-    install_requires=[],
+    install_requires=[
+        "nagioscheck==0.1.6"
+    ],
     tests_require=[
         "nose==1.3.0",
         "freezegun==0.1.11"
@@ -37,7 +41,8 @@ setup(
         'console_scripts': [
             'check_apt_security_updates='
             'plugins.command.check_apt_security_updates:main',
-            'check_reboot_required=plugins.command.check_reboot_required:main'
+            'check_reboot_required=plugins.command.check_reboot_required:main',
+            'check_elasticsearch=plugins.command.check_elasticsearch:main'
         ]
     }
 )
