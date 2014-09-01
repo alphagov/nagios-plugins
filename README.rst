@@ -34,6 +34,13 @@ Checks whether there are any packages that are waiting for a reboot until their 
     Default threshold is 0 days
 
 
+check_puppetdb_ssh_host_keys
+----------------------------
+
+Checks whether machines have duplicate SSH host keys by querying facts in PuppetDB.
+
+    check_puppetdb_ssh_host_keys [options]
+
 check_elasticsearch
 -------------------
 

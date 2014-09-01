@@ -1,0 +1,13 @@
+[ {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshdsakey",
+  "value" : "AAAAB3NzaC1kc3MAAACBAJFXPLGCt15q9i0Ou6AIbPrXCVTtgxyMj+C9/PIxL5Z0pALuwMZMq0MS9vpq6yT9bz+iQ5Q75cKhxdLRHhkX/ZNTLKWEAhZaZmIMmH0Iq4YVoURJ6NSYruuzVfrIblZSoUFqNzQ8sR5te3/bppNNOTht/glsoceyEbLbviNlvIMTAAAAFQD5BGAdrsgwym3VX2nwbJaeysSFDwAAAIBK+qqPE1qv799roqJqRD7ESRSnoBJG9wsZOk/NK8wA/tu1dkqJQ+jF+VqhL6M4iZ9y5VcoNAA/h5oR0Bn2L7SUnhddwUi5IpnXcFhiCmHH+nmljolN2yQU/cj4Sf6ksAaUck/LhLL2shs8ll3thIVrtY5QzXg/Yhf4IMlz5cTSLQAAAIBZKLbfuJDTUmxgo7JujsibD4KYG3ojbuB0OnYaCnjuT2sCfHm90VC9SAxRJEzWj6LdJSVvAjfMGkqlL7fzD8wu5blS+EgsHKnxnZrS0Dua831SeOGBQYgbHWXvsoP+J8QQOAqT8Z06ETNNIN1Iqfn1Fs6ZH+p4nCPiYUNN/R8H2Q=="
+}, {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshecdsakey",
+  "value" : "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBISCdfuP9HAszMhbpNLjlxQP3ZD1i+HMZseEHkJZNZxOnwm/uQhuv/Oo7FtvyXfDUFs9yOfMlvzN7KnpkwthG2Y="
+}, {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshrsakey",
+  "value" : "AAAAB3NzaC1yc2EAAAADAQABAAABAQCiFwdp/vaxGo9ajAK3nVpx9UzoIRrLYDQQ+cXNTJhon6JTmlSwIBbv5ETLeb5u/MeupEWNLmNiGsNiuk6fbruFERnZnHXUfakhHbw8E31j04eHVx9ye9pwFaQKNTjtkVtFpzIS5+nUFukwoK9kCdrPBMqtIJIZJLYPPFhFs5W7T7PFZOQ3l6da5w+/OYSUeRYjLTnnGd7XwTuPOCXUsEzlzDio90Y7JpCH1EjI5SS8vKFJdzXAPQQ+uV6edpQPxWjH+HcDWSnvlaAj3qcU7AaxgzACrnQ39JSGYOGrq0v4vNfB+CzotXXUg9ncLT7NwNtfUEc/J3rYDI5aoWTzYBEn"
+} ]
