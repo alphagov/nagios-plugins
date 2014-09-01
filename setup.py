@@ -31,7 +31,7 @@ setup(
         "nagioscheck==0.1.6"
     ],
     tests_require=[
-        "nose==1.3.1",
+        "nose >=1.3, <1.4",
         "freezegun==0.1.11"
     ],
 
