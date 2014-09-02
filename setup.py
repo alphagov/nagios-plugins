@@ -31,8 +31,9 @@ setup(
         "nagioscheck==0.1.6"
     ],
     tests_require=[
-        "nose==1.3.1",
-        "freezegun==0.1.11"
+        "nose >=1.3, <1.4",
+        "freezegun==0.1.11",
+        "httpretty==0.8.3"
     ],
 
     test_suite='nose.collector',
@@ -42,6 +43,7 @@ setup(
             'check_apt_security_updates='
             'plugins.command.check_apt_security_updates:main',
             'check_reboot_required=plugins.command.check_reboot_required:main',
+            'check_puppetdb_ssh_host_keys=plugins.command.check_puppetdb_ssh_host_keys:main',
             'check_elasticsearch=plugins.command.check_elasticsearch:main'
         ]
     }

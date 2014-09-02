@@ -1,0 +1,37 @@
+[ {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshdsakey",
+  "value" : "AAAAB3NzaC1kc3MAAACBAJFXPLGCt15q9i0Ou6AIbPrXCVTtgxyMj+C9/PIxL5Z0pALuwMZMq0MS9vpq6yT9bz+iQ5Q75cKhxdLRHhkX/ZNTLKWEAhZaZmIMmH0Iq4YVoURJ6NSYruuzVfrIblZSoUFqNzQ8sR5te3/bppNNOTht/glsoceyEbLbviNlvIMTAAAAFQD5BGAdrsgwym3VX2nwbJaeysSFDwAAAIBK+qqPE1qv799roqJqRD7ESRSnoBJG9wsZOk/NK8wA/tu1dkqJQ+jF+VqhL6M4iZ9y5VcoNAA/h5oR0Bn2L7SUnhddwUi5IpnXcFhiCmHH+nmljolN2yQU/cj4Sf6ksAaUck/LhLL2shs8ll3thIVrtY5QzXg/Yhf4IMlz5cTSLQAAAIBZKLbfuJDTUmxgo7JujsibD4KYG3ojbuB0OnYaCnjuT2sCfHm90VC9SAxRJEzWj6LdJSVvAjfMGkqlL7fzD8wu5blS+EgsHKnxnZrS0Dua831SeOGBQYgbHWXvsoP+J8QQOAqT8Z06ETNNIN1Iqfn1Fs6ZH+p4nCPiYUNN/R8H2Q=="
+}, {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshecdsakey",
+  "value" : "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBISCdfuP9HAszMhbpNLjlxQP3ZD1i+HMZseEHkJZNZxOnwm/uQhuv/Oo7FtvyXfDUFs9yOfMlvzN7KnpkwthG2Y="
+}, {
+  "certname" : "puppetmaster-1.management.development",
+  "name" : "sshrsakey",
+  "value" : "AAAAB3NzaC1yc2EAAAADAQABAAABAQCiFwdp/vaxGo9ajAK3nVpx9UzoIRrLYDQQ+cXNTJhon6JTmlSwIBbv5ETLeb5u/MeupEWNLmNiGsNiuk6fbruFERnZnHXUfakhHbw8E31j04eHVx9ye9pwFaQKNTjtkVtFpzIS5+nUFukwoK9kCdrPBMqtIJIZJLYPPFhFs5W7T7PFZOQ3l6da5w+/OYSUeRYjLTnnGd7XwTuPOCXUsEzlzDio90Y7JpCH1EjI5SS8vKFJdzXAPQQ+uV6edpQPxWjH+HcDWSnvlaAj3qcU7AaxgzACrnQ39JSGYOGrq0v4vNfB+CzotXXUg9ncLT7NwNtfUEc/J3rYDI5aoWTzYBEn"
+}, {
+  "certname" : "rabbitmq-1.backend.development",
+  "name" : "sshdsakey",
+  "value" : "AAAAB3NzaC1kc3MAAACBAImXob/2tdlayP6C7XmVzS9SwtGX50QlGmLq8CSl4J41Piu6AOVb1nvPgpcPYtD9jK9rKh2nGQfQSGnVfoM3fJH1Z9BgAENCfBAJ0WzWc+EqNx9TE1AxRHlRt4/UDTXtrKg/lAXu9pHuGPDXbuvFJyczIgXxJ2OhQu0spD6RATofAAAAFQCQwUSvcMG/i1KIllfDwLP844IFiQAAAIB6Lw/AP7CKHDx1FFcRUhi5zjmpmPCu9DKHHt5YZC85gtwkMiZjrchalzZoC7/Fnr6iRvpJXSFkh2YgBagWNtm8Q7vJFnQvZuDB2U98ZsuwPmSPTRnEEOWxG4pH+MgkmDd/7129QrANlomBSX2+ETmZB3HEREdvYYXqIoPOUD4uEQAAAIAK1iA/5TKB8fcjNKd4Bnvg2oNuhWqX8gUfpjJQ6P3r3HcAbBT1TUiz2Hydc9HFey+Tw9PXiSGnOEaSlXrdL5F6+TYTzQ+98jF7YXhSfQMblx5yavZ7viBNPRwQKj1VXACKCjRAC6dy741pAO91Bwqz12KHmazDwPy/8P/8qpZC0g=="
+}, {
+  "certname" : "rabbitmq-1.backend.development",
+  "name" : "sshecdsakey",
+  "value" : "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNEBosiycXkcw5+gGnzHPpNpEuZVFj5ZI8ZJkl2M7h/JFNbyrcG5sGwtjIB9P3YrVO0RqDn2CNK3YhurPdSUvgs="
+}, {
+  "certname" : "rabbitmq-1.backend.development",
+  "name" : "sshrsakey",
+  "value" : "AAAAB3NzaC1yc2EAAAADAQABAAABAQC4SnIbZR4rV0b1Ohp5LMe2sAP3udsDOE4+jbdFTNfYFTY9UHHgqMjFzY8b9u218AKI99DvZukEkrxvGmu1pRwIW1TrGlzXy+gF/78NfnTmFJbIYcCzUjfw/p9nJWx70T0JMVBNCkOjtJbOizL/96XpSylN96UgQkOKkWviWuO2+Lhz9INRKDlnb6AckRgZCULsxfZlG/cvycfGsKtg46KoHy4d4uUK4WwJqJRORF3wrKUuEwm8ETEe9f4+/KopYr3vAF3mfDTwARMOmXeSmjHo+3U0vcNKeaLe11DO/cAQSuahbNe+Wd0TCJNArmf/YJrMGxyBxNR51gTWhvi3vikj"
+}, {
+  "certname" : "redis-1.backend.development",
+  "name" : "sshdsakey",
+  "value" : "AAAAB3NzaC1kc3MAAACBALIr6184zrWkHal+K0TQLF+c/KXDvf5l3dbj/xVyqvnPgSRSIBpXCKybxcM9w4SXk5/l1Wru0w/N4vbpkBnZ9be3Vi1lAGL/otW1vEJw+7gGalIY+BpD0VEB51H75ZSXbxc2usX4kC6cGHHjPZCTSdeGfjHLQ2C0PJefVQBO2OUfAAAAFQCuL+w94zvZP4i3+70BBHtl9cQEpwAAAIEAmjhPWWNRYT5i9kfxS+XRtGEzidoIDQM1gShR5rUEisiZ0IEA9PWh8l7bx+UqiVIMnuXoK/XFJdP7P2Qt83LnKqMx4GaisCih6ZH5WAA+zeUYrdZWNrwneKJYplyPCr7NNz4HprHdQCm+oIXXQx3libEP0+kPlIrvm2zH8417RlIAAACBAI/r3vvfn7e0WYuxjYH+kYe5kc2k7hsvHO2jjflEve2oo5qS5yeuNdaAb/3Qja0yI2xg4yrtmkjCVAPZIJu/uUOwxiDLvfyl1cWbGVtDJlG9QsigyEnEVhB3kH3mRyEDlKELHg7Gez4hy/QJBoSSYLhD4BR4DqKYtm0aHvtjIIY5"
+}, {
+  "certname" : "redis-1.backend.development",
+  "name" : "sshecdsakey",
+  "value" : "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMS6yvae9NuZgOEwEQDu444hW/aX9DXInOa3NXzNczZC4STj7VXjvsDwaMhDyzVsqxQwIKD2wCE5t979FbKdUXs="
+}, {
+  "certname" : "redis-1.backend.development",
+  "name" : "sshrsakey",
+  "value" : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDG9jFD+waLNL096t3gfS6nJGpzZXZ3+OHlQcs/0xJBDzxifUsG5PAeyH9GjoqvuxurQed2HSWmaRY7CmNWgPHJVKhfvOnpkWMp/OtobHIZA+oDGr3BpxTq7tLBYzu0skVH7PLQ1T4TgmOsL0uBwamR2vQGA/aPvEpYi3FwJ7QfkFumFoWqbJDSKoLJAIJwVKNj5NT39ewXfZcyiwc9i6JrAcJCw2W8+cSHp50guf/dd7W/nFdnrF/evQtEYE5yUjkhXbPKVGbdSUBNXkKG6byFMGyh1eE42cJz3fpoObdGDkZiPOddcjVNqFwBdc1i4jT2QG1Z0PNtUyBJpKQCUq7N"
+} ]
