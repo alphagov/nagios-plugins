@@ -10,10 +10,22 @@ from plugins.output import (CheckException,
 
 
 def parse_output(apt_check_output):
+    """
+    Parse the passed in apt_check_output. Expects a string of the format
+    '<int>;<int>'. The second of these two numbers is the number of security
+    updates. If, for instance, there are broken packages then apt_check_output
+    cannot be parsed as an int. This is assumed to be a critical
+    as it could imply broken packages.
+    """
     packages_to_update = string.split(apt_check_output, ';')
 
-    return (int(packages_to_update[0]),
-            int(packages_to_update[1]))
+    try:
+        return (int(packages_to_update[0]),
+                int(packages_to_update[1]))
+    except ValueError:
+        nagios_critical("apt-check output was not an int. "
+                        "Returned '{}'".format(
+                            apt_check_output))
 
 
 def parse_apt_check(apt_check_output, critical, warning):
