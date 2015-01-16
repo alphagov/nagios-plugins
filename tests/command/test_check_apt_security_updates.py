@@ -30,10 +30,21 @@ class TestCheckAptSecurityUpdatesCommand(unittest.TestCase):
 
         self.assertEqual(context.exception.severity, 1)
 
-    def test_updates_ok(self):
+    def test_updates_critical(self):
         with self.assertRaisesRegexp(CheckException, 'need') as context:
             parse_apt_check(
                 apt_check_output='142;12',
+                critical=10,
+                warning=5
+            )
+
+        self.assertEqual(context.exception.severity, 2)
+
+    def test_packages_broken(self):
+        apt_check_broken_message = 'E: Error: BrokenCount > 0'
+        with self.assertRaisesRegexp(CheckException, "CRITICAL: apt-check output was not an int. Returned 'E: Error: BrokenCount > 0'") as context:
+            parse_apt_check(
+                apt_check_output="{}".format(apt_check_broken_message),
                 critical=10,
                 warning=5
             )
