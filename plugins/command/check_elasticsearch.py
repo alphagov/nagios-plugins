@@ -79,6 +79,9 @@ class ElasticSearchCheck(NagiosCheck):
                         "The ElasticSearch API should be listening "
                         "here.  Defaults to 9200.")
 
+        self.add_option('r', 'routing_allocation', None,
+                        "Check if routing allocation is enabled.")
+
     def check(self, opts, args):
         host = opts.host or "localhost"
         port = int(opts.port or '9200')
@@ -123,6 +126,41 @@ class ElasticSearchCheck(NagiosCheck):
         # where all shards are living at this point in time.
         es_state = get_json(r'http://%s:%d/_cluster/state' %
                             (host, port))
+
+        if opts.r:
+            # Check for routing allocation being disabled by transient settings
+            #
+            # Routing allocation will often be disabled manually during
+            # maintainance operations (eg, rebooting nodes).  We want an alert
+            # when it's disabled, so that we don't forget to turn it back on
+            # again.  Also, if it's disabled, there's little point running
+            # further checks because it implies known maintainance is in
+            # progress.
+            es_settings = get_json(r'http://%s:%d/_cluster/settings' %
+                                   (host, port))
+
+            try:
+                allocation = es_settings['transient']['cluster']['routing']['allocation']['enable']
+            except KeyError:
+                # We assume this means routing allocation is not set and
+                # everything is ok.
+                #
+                # This is an unsatisfying check, because it will default to
+                # being a silent pass if elasticsearch changes its API, and can
+                # also pass if allocation is disabled with some other
+                # deprecated settings (eg, by setting
+                # cluster.routing.allocation.disable_allocation)
+                #
+                # However, because the keys don't exist in the index settings
+                # API unless allocation has been disabled since the cluster
+                # started up, we can't require the keys to be present.  In the
+                # absence of a way to make the default be "fail", this check
+                # that we've not accidentally left allocation disabled is
+                # better than nothing.
+                pass
+            else:
+                if allocation == 'none':
+                    raise Status('critical', ("Routing allocation disabled for cluster",))
 
         # Request a bunch of useful numbers that we export as perfdata.
         # Details like the number of get, search, and indexing

@@ -32,7 +32,7 @@ setup(
     ],
     tests_require=[
         "nose >=1.3, <1.4",
-        "freezegun==0.1.11",
+        "freezegun==0.3.3",
         "httpretty==0.8.3"
     ],
 
