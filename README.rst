@@ -44,7 +44,13 @@ Checks whether machines have duplicate SSH host keys by querying facts in Puppet
 check_elasticsearch
 -------------------
 
-Checks the health of elasticsearch clusters.
+Checks the health of Elasticsearch clusters.
 
     check_elasticsearch [options]
 
+check_elasticsearch_aws
+-----------------------
+
+Checks the health of AWS Managed Elasticsearch clusters.
+
+    check_elasticsearch_aws [options]
