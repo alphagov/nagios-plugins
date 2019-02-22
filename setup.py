@@ -44,7 +44,8 @@ setup(
             'plugins.command.check_apt_security_updates:main',
             'check_reboot_required=plugins.command.check_reboot_required:main',
             'check_puppetdb_ssh_host_keys=plugins.command.check_puppetdb_ssh_host_keys:main',
-            'check_elasticsearch=plugins.command.check_elasticsearch:main'
+            'check_elasticsearch=plugins.command.check_elasticsearch:main',
+            'check_elasticsearch_aws=plugins.command.check_elasticsearch_aws:main'
         ]
     }
 )
