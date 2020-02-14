@@ -1,5 +1,7 @@
-nagios-plugins
+[DEPRECATED] nagios-plugins
 ==============
+
+These have been migrated to `alphagov/govuk-puppet`](https://github.com/alphagov/govuk-puppet) where they are used.
 
 A collection of useful nagios plugins used in GDS infrastructure.
 
